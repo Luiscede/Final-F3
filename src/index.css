@@ -1,5 +1,7 @@
 body {
-  margin: 0;
+  padding: auto;
+  width: 100%;
+  margin: auto;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -7,27 +9,45 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.appStyle{
+  width: 100%;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 .favButton{
-  background-color: rgba(136, 136, 136, 0.116);
-  padding: 10px;
-  border: none;
-  width: 100%;
+  background:linear-gradient(gold, white);
+  padding: 15px;
+  border-radius: 50%;
+  width: 50px;
   cursor: pointer;
+  margin-bottom: 4px;
+}
+.favButton:hover{
+  border: 0.0px solid rgb(6, 9, 14);
+  opacity: 50%;
 }
 
 h1{
+  text-align: center;
+  margin-top: 0px;
+}
+
+h2{
   text-align: center;
 }
 
 nav{
   display: flex;
-  width: 80vw;
-  justify-content: flex-start;
-  padding: 1rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  
+  height: 80px;
+  background-color: #76c01c85;
+  opacity: 70%;
+
 }
 
 a{
@@ -42,19 +62,22 @@ a:hover{
 
 footer {
   display: flex;
+  flex-Direction:'row';
   justify-content: center;
   text-align: center;
   padding: 2rem;
   position: relative;
   bottom: 0;
-  width: 90%;
+  width: 100%;
   height: 40px;
-  margin-top: 2rem;
+  
+  background: linear-gradient(rgba(24, 24, 24, 0.503),white);
 }
 
 footer > img{
   width: 200px;
   margin: 0;
+  
 }
 footer > p{
   margin: 0;
@@ -66,24 +89,46 @@ form{
   flex-direction: column;
   justify-content: space-around;
   width: 300px;
-  height: 100px;
+  height: auto;
   margin: 0 auto;
+  background-color: transparent;
 }
 
+
 .card{
+
   display: flex;
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
-  width: 200px;
-  padding: 0.5rem 0.5rem 0 0.5rem;
-  border: 0.5px solid rgb(136, 136, 136);
+  width: 220;
+  padding: 0.5rem 0.5rem 0 0.5rem; 
+  /* padding: auto; */
+  border: 2px solid rgb(8, 0, 0);
+  
+  border-radius: 10%;
+  background: linear-gradient(#aaac40, #36cea6);
 }
 
+.link{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  width: 230px;
+  padding: auto;
+  
+}
+/* 
 .card:hover{
   border: 0.5px solid rgb(206, 217, 142);
-}
+} */
 
+.cardImg{
+  width: 100px;
+  border-radius: 40%;
+  border: 2px solid rgb(0, 0, 0);
+}
 .card-grid{
   display: flex;
   justify-content: space-evenly;
@@ -91,7 +136,8 @@ form{
   width: 90vw;
   height: auto;
   flex-wrap: wrap;
-  margin: 0 auto;
+  margin:auto;
+  padding-right:0px;
 }
 
 table {
@@ -113,10 +159,60 @@ tr:nth-child(even) {
   background-color: #dddddd;
 }
 
+.fatherForm{
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(#821720,white);
+  align-items: center;
+  padding-bottom: 1.5rem;
+}
+
+.main{
+  background:linear-gradient(rgba(25, 173, 119, 0.747),rgba(161, 215, 228, 0.778));
+  padding-bottom:3rem ;
+}
 .dark{
-  background-color: #12121296;
+  background:linear-gradient(black,rgb(216, 215, 215));
   color: white;
 }
 .dark > a {
   color: white;
 }
+
+.buttomTheme{
+  width: 7rem;
+  border-radius: 10%;
+  background: linear-gradient(rgb(255, 255, 255),rgba(0, 0, 0, 0.407));
+  box-shadow: 5px 5px 5px black;
+
+}
+
+
+
+.formStyle{
+  background: rgba(253, 141, 141,.5);
+  display: flex;
+  text-align: center;
+  font-size: 1.5rem;
+  width: 500px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  justify-content: space-evenly;
+  border: 10px;
+  border-radius: 15%;
+  height: 380px;
+  outline: 8px ridge rgba(41, 4, 14, 0.481);
+  border-radius: 2rem;
+  
+}
+
+input{
+
+  background-color: rgba(255, 255, 255, 0.564);
+}
+.formStyle > textarea{
+  background-color: transparent;
+  height: 100;
+  
+}
+
