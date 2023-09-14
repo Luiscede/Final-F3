@@ -84,14 +84,20 @@ a:hover{
 }
 
 .detail{
-  background:linear-gradient(rgba(25, 173, 119, 0.747),rgba(161, 215, 228, 0.778));
+  background:linear-gradient(rgba(161, 215, 228, 0.778),rgb(16, 66, 47));
+  padding-top: 2rem;
   padding-bottom:3rem ;
   text-align: center;
   width: 400px;
-  outline: auto;
+  outline:5px solid rgba(22, 40, 70, 0.604);
   margin:0px auto;
+  border-radius: 15px;
+
 }
 
+.detail img{
+  border-radius: 50px;
+}
 
 
 footer {
@@ -230,7 +236,7 @@ tr:nth-child(even) {
 
 .dark{
   background:linear-gradient(black,rgb(216, 215, 215));
-  color: white;
+  color:white
 }
 .dark > a {
   color: white;

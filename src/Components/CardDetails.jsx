@@ -11,6 +11,7 @@ const CardDetails = ({dentista}) => {
         <h3>Nombre Especialista : {dentista.name}</h3>
         <h3>Email de contacto💌: {dentista.email}</h3>
         <h3>Telefono 📱{dentista.phone}</h3>
+        <h3>Website: {dentista.website}</h3>
     </div>
   )
 }
