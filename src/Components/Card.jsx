@@ -14,11 +14,13 @@ const Card = ({dentista}) => {
 
     setFavs((favs) => [...favs, dentista])
   }
+  // const removeFav = (id) => {
+  
 
   
   return (
     <div className="card">
-        {/* En cada card deberan mostrar en name - username y el id */}
+        
         
         <Link to={'/detail/' + dentista.id} className="link">
           <div>
@@ -29,10 +31,6 @@ const Card = ({dentista}) => {
           <h4>{dentista.username}</h4>
         </Link>
 
-        
-        {/* No debes olvidar que la Card a su vez servira como Link hacia la pagina de detalle */}
-
-        {/* Ademas deberan integrar la logica para guardar cada Card en el localStorage */}
         <button onClick={addFav} className="favButton">⭐</button>
     </div>
   );

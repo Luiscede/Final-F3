@@ -43,7 +43,7 @@ const Form = () => {
         <input type="email" placeholder='example: "user@user.com"' onChange={(event) => setUser({...user, email: event.target.value})}/>
       <label ></label>
       <textarea placeholder='Do you wanna tell us something about you? 🥰' onChange={(event) => setUser({...user, message: event.target.value})} style={{ resize: "none", height: "100px", backgroundColor: "#fadcdf", opacity:'50%', borderRadius:'5%'}} />
-      <button>Send</button>
+      <button className='sendButton'>Send</button>
       
         {error && <div><h4>Please verify your information</h4></div>}
 

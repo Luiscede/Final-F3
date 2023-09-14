@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import axios from 'axios'
+import CardDetails from '../Components/CardDetails'
 
 //Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
 
@@ -23,16 +24,16 @@ useEffect(fetchDentist, [urlDentistXId])
 
 
   return (
-    <div style={{width:'100%', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', backgroundColor:'aqua'}}>
+    <div className='detailbox'>
+
+    <h1>Specialist Details</h1>
+    <div  className='detail' >
     
-      <h1>Specialist Details</h1>
-      <div>
-      <img  src='/images/docImg.jpg' alt='er doc' width={'200px'} />
-      </div>
       
-      <h3>Nombre Especialista : {dentista.name}</h3>
-      <h3>Email de contacto💌: {dentista.email}</h3>
-      <h3>Telefono 📱{dentista.phone}</h3>
+  
+      <CardDetails dentista={dentista}/>
+
+    </div>
     </div>
   )
 }

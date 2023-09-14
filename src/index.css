@@ -9,6 +9,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 .appStyle{
   width: 100%;
 }
@@ -43,11 +44,22 @@ nav{
   width: 100%;
   justify-content: center;
   align-items: center;
-  
+  border-bottom: #ccc;
   height: 80px;
-  background-color: #76c01c85;
+  background-color: #e4af6dd1;
   opacity: 70%;
 
+}
+.buttomThemeBox{
+  display: flex-box;
+  flex-direction: row;
+  position: absolute;
+  margin-left:80%;
+} 
+
+
+nav button{
+  margin-right: 10px;
 }
 
 a{
@@ -60,12 +72,35 @@ a:hover{
   color: rgb(136, 136, 136);
 } 
 
+
+.detailbox{
+  background-color: #c0aaaa;
+  width: 100%;
+  display: block;
+  justify-content: center;
+  
+  padding-bottom: 4rem;
+  
+}
+
+.detail{
+  background:linear-gradient(rgba(25, 173, 119, 0.747),rgba(161, 215, 228, 0.778));
+  padding-bottom:3rem ;
+  text-align: center;
+  width: 400px;
+  outline: auto;
+  margin:0px auto;
+}
+
+
+
 footer {
   display: flex;
   flex-Direction:'row';
   justify-content: center;
   text-align: center;
-  padding: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   position: relative;
   bottom: 0;
   width: 100%;
@@ -104,10 +139,11 @@ form{
   width: 220;
   padding: 0.5rem 0.5rem 0 0.5rem; 
   /* padding: auto; */
-  border: 2px solid rgb(8, 0, 0);
   
+  outline: 8px ridge rgba(52, 84, 144, 0.481);
   border-radius: 10%;
   background: linear-gradient(#aaac40, #36cea6);
+  margin-bottom: 2rem;
 }
 
 .link{
@@ -117,6 +153,7 @@ form{
   align-items: center;
   width: 230px;
   padding: auto;
+  
   
 }
 /* 
@@ -171,6 +208,26 @@ tr:nth-child(even) {
   background:linear-gradient(rgba(25, 173, 119, 0.747),rgba(161, 215, 228, 0.778));
   padding-bottom:3rem ;
 }
+
+.favs{
+  background:linear-gradient(rgba(25, 173, 119, 0.747),rgba(161, 215, 228, 0.778));
+  padding-bottom:3rem ;
+
+}
+
+.sendButton{
+  border-radius: 15px;
+  background:linear-gradient(rgba(237, 63, 124, 0.725), rgb(226, 146, 146));
+  font-size: 2rem;
+}
+
+.sendButton:hover{
+  background:rgba(212, 169, 184, 0.725);
+  color:black;
+  font-size: 2rem;
+}
+
+
 .dark{
   background:linear-gradient(black,rgb(216, 215, 215));
   color: white;
@@ -179,12 +236,21 @@ tr:nth-child(even) {
   color: white;
 }
 
+.buttomThemeBox{
+  align-self: last;
+  text-align: right;
+}
 .buttomTheme{
   width: 7rem;
   border-radius: 10%;
   background: linear-gradient(rgb(255, 255, 255),rgba(0, 0, 0, 0.407));
   box-shadow: 5px 5px 5px black;
+  outline: 3px ridge rgba(216, 218, 221, 0.481);
+  
+}
 
+.buttomTheme:hover{
+  background-color: aquamarine;
 }
 
 
@@ -209,10 +275,12 @@ tr:nth-child(even) {
 input{
 
   background-color: rgba(255, 255, 255, 0.564);
+  border-radius: 10px;
 }
 .formStyle > textarea{
   background-color: transparent;
   height: 100;
   
 }
+
 

@@ -18,8 +18,9 @@ const Navbar = () => {
       <Link key={index} to= {titulo.router}>
         {titulo.titulo}
         </Link>))}
-
-      <button className='buttomTheme' onClick={toggleTheme}>Change Theme😎🌚</button>
+      <div className='buttomThemeBox'>
+        <button style={{paddingRight:'0px'}} className='buttomTheme' onClick={toggleTheme}>Change Theme😎🌚</button>
+      </div>
     </nav>
   )
 }
